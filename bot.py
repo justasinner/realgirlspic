@@ -1,16 +1,19 @@
+import os
 import praw
 from telegram import Bot
 from telegram.ext import Updater, CommandHandler
 import time
 
 # Reddit API setup
-reddit = praw.Reddit(client_id='pfslWzrltzUkPia0QkTYjQ',
-                     client_secret='2OEekbm94bNx7kj1fAhBKAEYTeLhRw',
-                     user_agent='Brian_Augustine')
+reddit = praw.Reddit(
+    client_id=os.getenv('pfslWzrltzUkPia0QkTYjQ'),
+    client_secret=os.getenv('2OEekbm94bNx7kj1fAhBKAEYTeLhRw'),
+    user_agent=os.getenv('Brian_Augustine')
+)
 
 # Telegram Bot setup
-telegram_bot_token = '7682959518:AAG1HHJvftnycY36CE2cJsLB--Zisjlbd6o'
-chat_id = 'https://t.me/+GQzREOcwT6IzMjU6'
+telegram_bot_token = os.getenv('7682959518:AAG1HHJvftnycY36CE2cJsLB--Zisjlbd6o')
+chat_id = os.getenv('https://t.me/+GQzREOcwT6IzMjU6')
 bot = Bot(token=telegram_bot_token)
 
 def fetch_and_send_photos(context):
