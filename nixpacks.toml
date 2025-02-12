@@ -1,0 +1,13 @@
+# nixpacks.toml
+[build]
+  # Specify the language and version
+  language = "python"
+  python_version = "3.9"  # or any other version you prefer
+
+[env]
+  # You can specify any environment variables here if needed
+  TELEGRAM_BOT_TOKEN = "7682959518:AAG1HHJvftnycY36CE2cJsLB--Zisjlbd6o"
+  REDDIT_CLIENT_ID = "pfslWzrltzUkPia0QkTYjQ"
+  REDDIT_CLIENT_SECRET = "2OEekbm94bNx7kj1fAhBKAEYTeLhRw"
+  REDDIT_USER_AGENT = "Brian_Augustine"
+  CHAT_ID = "https://t.me/+GQzREOcwT6IzMjU6"
