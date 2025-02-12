@@ -1,7 +1,7 @@
 # nixpacks.toml
 [build]
   # Specify the language and version
-  language = "python"
+  language = "python3"
   python_version = "3.9"  # or any other version you prefer
 
 [env]
@@ -13,4 +13,4 @@
   CHAT_ID = "https://t.me/+GQzREOcwT6IzMjU6"
 
 [start]
-  command = "python bot.py"  # Command to start your bot
+  command = "python3 bot.py"  # Command to start your bot
