@@ -11,3 +11,6 @@
   REDDIT_CLIENT_SECRET = "2OEekbm94bNx7kj1fAhBKAEYTeLhRw"
   REDDIT_USER_AGENT = "Brian_Augustine"
   CHAT_ID = "https://t.me/+GQzREOcwT6IzMjU6"
+
+[start]
+  command = "python bot.py"  # Command to start your bot
