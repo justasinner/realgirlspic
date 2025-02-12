@@ -28,7 +28,7 @@ async def fetch_and_send_photos():
     subreddit = reddit.subreddit('RealGirls')
     for submission in subreddit.new(limit=10):
         if submission.url.endswith(('.jpg', '.jpeg', '.png')):
-            await bot.send_photo(chat_id='@your_channel_username', photo=submission.url)
+            await bot.send_photo(chat_id='https://t.me/+GQzREOcwT6IzMjU6', photo=submission.url)
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
