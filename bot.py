@@ -4,11 +4,16 @@ from telegram import Bot
 from telegram.ext import Updater, CommandHandler
 import time
 
+# Print environment variables for debugging
+print("Client ID:", os.getenv('REDDIT_CLIENT_ID'))
+print("Client Secret:", os.getenv('REDDIT_CLIENT_SECRET'))
+print("User  Agent:", os.getenv('REDDIT_USER_AGENT'))
+
 # Reddit API setup
 reddit = praw.Reddit(
-    client_id=os.getenv('pfslWzrltzUkPia0QkTYjQ'),
-    client_secret=os.getenv('2OEekbm94bNx7kj1fAhBKAEYTeLhRw'),
-    user_agent=os.getenv('Brian_Augustine')
+    client_id=os.getenv('REDDIT_CLIENT_ID'),
+    client_secret=os.getenv('REDDIT_CLIENT_SECRET'),
+    user_agent=os.getenv('REDDIT_USER_AGENT')
 )
 
 # Telegram Bot setup
