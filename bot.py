@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler
 import time
 
 # Reddit API setup
-reddit = praw.Reddit(client_id='YOUR_CLIENT_ID',
+reddit = praw.Reddit(client_id='pfslWzrltzUkPia0QkTYjQ',
                      client_secret='YOUR_CLIENT_SECRET',
                      user_agent='YOUR_USER_AGENT')
 
